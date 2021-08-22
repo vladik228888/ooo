@@ -28,6 +28,7 @@ import dev.triumphteam.gui.components.nbt.NbtWrapper;
 import dev.triumphteam.gui.components.nbt.Pdc;
 import org.bukkit.inventory.ItemStack;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Ideally this wouldn't need to be an util, but because of the {@link LegacyNbt} it makes it easier. Legacy..
@@ -56,6 +57,7 @@ public final class ItemNbt {
      * @param key       The key to look for.
      * @return The tag that was stored in the {@link ItemStack}.
      */
+    @Nullable
     public static String getString(@NotNull final ItemStack itemStack, @NotNull final String key) {
         return nbt.getString(itemStack, key);
     }

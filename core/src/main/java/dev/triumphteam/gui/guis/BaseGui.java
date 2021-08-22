@@ -808,7 +808,7 @@ public abstract class BaseGui implements InventoryHolder {
             return;
         }
 
-        if (slot < 0 || slot > limit) throwInvalidSlot(slot);
+        if (slot < 0 || slot >= limit) throwInvalidSlot(slot);
     }
 
     /**

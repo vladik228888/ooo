@@ -30,9 +30,9 @@ import org.jetbrains.annotations.NotNull;
 public enum GuiType {
 
     CHEST(InventoryType.CHEST, 9),
-    WORKBENCH(InventoryType.WORKBENCH, 9),
+    WORKBENCH(InventoryType.WORKBENCH, 10),
     //HOPPER(InventoryType.HOPPER, 5),
-    DISPENSER(InventoryType.DISPENSER, 8),
+    DISPENSER(InventoryType.DISPENSER, 9),
     BREWING(InventoryType.BREWING, 4);
 
     @NotNull
